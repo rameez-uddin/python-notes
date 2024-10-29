@@ -4,12 +4,7 @@
 ## 1. `str.lower()`
 **Use Case:** Convert all characters in a string to lowercase.
 
-```python **\'**
-   - **Use Case:** Insert a single quote in a string that is enclosed in single quotes.
-   ```python
-   text = 'It\'s a beautiful day!'
-   
-   print(text)  # Output: It's a beautiful day!
+```python
 text = "Hello, World!"
 print(text.lower())  # Output: "hello, world!"
 ```
