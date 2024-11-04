@@ -27,3 +27,29 @@ cat = Cat()
 make_sound(dog)  # Output: Woof!
 make_sound(cat)  # Output: Meow!
 ```
+# polymorphism class inheritance:
+
+In class inheritance, polymorphism lets a subclass inherit methods from a parent class but also override them to have specific behaviors. This allows the same method to work differently depending on the subclass.
+
+Extending the Example
+Let's make a parent class Animal and have Dog and Cat inherit from it, each with their own version of the sound method.
+
+```python
+class Animal:
+    def sound(self):
+        return "Some sound"
+
+class Dog(Animal):  # Inherits from Animal
+    def sound(self):  # Overrides the parent method
+        return "Woof!"
+
+class Cat(Animal):  # Inherits from Animal
+    def sound(self):  # Overrides the parent method
+        return "Meow!"
+
+# Polymorphic behavior
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    print(animal.sound())  # Output: Woof!, Meow!
+```    
